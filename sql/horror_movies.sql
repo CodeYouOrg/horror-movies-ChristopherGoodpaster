@@ -1,5 +1,3 @@
--- Add your SQL here
-
 SELECT 
     id AS "Movie_ID", 
     name AS "Movie_Title", 
@@ -7,8 +5,9 @@ SELECT
 FROM 
     movies
 WHERE 
-    genre = 'Horror' 
-    AND year <= 1985
-ORDER BY 
-    imdb_rating DESC
+    year <= 1985
+    AND genre = 'horror' 
+    
+ORDER BY imdb_rating desc 
+
 LIMIT 3;
